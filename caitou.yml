@@ -1,5 +1,5 @@
 
 site: kratos
 
-public: dist
+public: build
 force_ssl: true
