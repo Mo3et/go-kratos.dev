@@ -1,0 +1,5 @@
+
+site: kratos
+
+public: dist
+force_ssl: true
