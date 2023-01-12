@@ -1,4 +1,4 @@
-name: Deploy
+name: Caitou Deploy
 on:
   push:
     branches:
