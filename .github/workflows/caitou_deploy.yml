@@ -21,7 +21,8 @@ jobs:
       - name: Caitou Deploy
         run: |
           curl -sf https://cli.caitouyun.com/install.sh | sh
-          caitou deploy --git
+          caitou deploy --production
+      # caitou deploy --git
         env:
           CAITOU_TOKEN: ${{ secrets.CAITOU_TOKEN }}
 ##
