@@ -26,13 +26,13 @@ keywords:
 ### 安装工具
 
 ```bash
-go install entgo.io/ent/cmd/ent
+go install entgo.io/ent/cmd/ent@latest
 ```
 
 ### 创建实体 Schema
 
 ```bash
-ent init User
+ent new User
 ```
 
 将会在 *project/ent/schema/* 目录下为用户生成模式:
@@ -85,6 +85,7 @@ func (User) Fields() []ent.Field {
 
 ```
 go generate ./ent
+# ent generate ./ent/schema
 ```
 
 ### 创建数据库连接客户端
@@ -135,6 +136,5 @@ func CreateUser(ctx context.Context, client *ent.Client) (*ent.User, error) {
 
 ### References
 
-* https://entgo.io/docs/getting-started/
-* https://github.com/go-kratos/examples/tree/main/blog/internal/data
-
+* [https://entgo.io/docs/getting-started/](https://entgo.io/docs/getting-started/)
+* [https://github.com/go-kratos/examples/tree/main/blog/internal/data](https://github.com/go-kratos/examples/tree/main/blog/internal/data)
